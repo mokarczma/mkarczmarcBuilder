@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a87b85f2073f4241b7b01760993dff96" Name="Diagram1">
+        <EntityTypeShape EntityType="BuilderDBModel.Company" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.CompanyTag" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Customer" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Image" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Opinion" Width="1.5" PointX="10.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Reservation" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.ReservationTerm" Width="1.5" PointX="10.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Role" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Tag" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuilderDBModel.Term" Width="1.5" PointX="5.25" PointY="15.625" IsExpanded="true" />
+        <AssociationConnector Association="BuilderDBModel.FK_Company_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_CompanyTag_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_Image_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_Reservation_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_Term_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_CompanyTag_Tag" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_Customer_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_Reservation_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_Opinion_Reservation" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_ReservationTerm_Reservation" ManuallyRouted="false" />
+        <AssociationConnector Association="BuilderDBModel.FK_ReservationTerm_Term" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

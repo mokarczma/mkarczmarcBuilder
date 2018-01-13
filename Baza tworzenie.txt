@@ -1,0 +1,72 @@
+use BuilderDB
+
+CREATE TABLE Company 
+(ID integer primary key, 
+login varchar(50),
+password varchar(max),
+email varchar(100),
+companyName varchar(200),
+speciality varchar(100),
+services varchar(max),
+pricing varchar(max),
+location varchar(200),
+role_id integer);
+use BuilderDB
+CREATE TABLE Customer 
+(ID integer primary key, 
+login varchar(50),
+password varchar(max),
+email varchar(100),
+name varchar(50),
+surname varchar(100),
+phoneNumber  integer,
+role_id integer);
+
+CREATE TABLE Role
+(ID integer primary key, 
+name varchar(50),
+weight integer)
+
+use BuilderDB
+CREATE TABLE Tag
+(ID integer primary key, 
+name varchar(200))
+
+CREATE TABLE CompanyTag
+(ID integer primary key, 
+tag_id integer, 
+company_id integer)
+weight integer)
+
+use BuilderDB
+CREATE TABLE Term
+(ID integer primary key,
+startDate date,
+endDate date,
+status varchar(50),
+company_id integer)
+
+CREATE TABLE Reservation
+(ID integer primary key,
+company_id integer,
+customer_id integer,
+approval varchar(50),
+firstConversDate datetime,
+confimDate datetime,
+description varchar(max),
+companyReplay varchar(max),
+status varchar(50))
+
+use BuilderDB
+CREATE TABLE ReservationTerm
+(ID integer primary key,
+company_id integer,
+reservation_id integer);
+
+use BuilderDB
+CREATE TABLE Opinion
+(ID integer primary key,
+message varchar(max),
+gradeValue integer,
+adminAccept integer,
+reservation_id integer)
